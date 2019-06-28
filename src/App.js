@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+    state = {
+      loading: true,
+      USD: null
+    };
+
+    async componentDidMount() {
+        const url = 'https://blockchain.info/ticker';
+        const response = await fetch(url);
+        const data = await response.json();
+        this.setState({USD: data.USD, loading: false});
+    }
+
+
+  render(){
+    return(
+        <div>
+            {this.state.loading || !this.state.USD ? <div> loading... </div>: <div> {this.state.USD.buy} </div>}
+        </div>
+    );
+  }
 }
 
 export default App;
