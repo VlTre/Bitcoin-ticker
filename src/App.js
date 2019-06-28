@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './components/Header';
 
 import './App.css';
 
@@ -18,7 +19,8 @@ class App extends Component{
 
   render(){
     return(
-        <div>
+        <div className={'App'}>
+            <Header/>
             {this.state.loading || !this.state.USD ? <div> loading... </div>: <div> {this.state.USD.buy} </div>}
         </div>
     );
