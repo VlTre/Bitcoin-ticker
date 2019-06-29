@@ -2,9 +2,9 @@
 /*text color #000000 opacity 20%*/
 
 .App {
-  text-align: center;
   background-color: #30373e;
   color: #000000;
+
 }
 
 .header{
@@ -26,4 +26,18 @@
   font-size: 24px;
   color: #fff;
   align-self: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+.tab{
+  width: 40%;
+  align-self: center;
+  margin-left: 10%;
+}
+
+.tabContainer{
+  margin-top: 30px;
+  display: flex;
+}
+

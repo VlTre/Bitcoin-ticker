@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
+import CurrencyTab from './components/CurrencyTab';
 
 import './App.css';
 
@@ -9,19 +10,12 @@ class App extends Component{
       USD: null
     };
 
-    async componentDidMount() {
-        const url = 'https://blockchain.info/ticker';
-        const response = await fetch(url);
-        const data = await response.json();
-        this.setState({USD: data.USD, loading: false});
-    }
-
 
   render(){
     return(
         <div className={'App'}>
             <Header/>
-            {this.state.loading || !this.state.USD ? <div> loading... </div>: <div> {this.state.USD.buy} </div>}
+            <CurrencyTab/>
         </div>
     );
   }
