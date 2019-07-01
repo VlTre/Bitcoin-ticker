@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import Caeds from './components/Cards';
+import Cards from './components/Cards';
 import CurrencyTab from './components/CurrencyTab';
+import Footer from './components/Footer';
 import AverageUsdPrice from './components/AverageUsdPrice';
 
 import './App.css';
@@ -14,7 +15,8 @@ class App extends Component{
             <Header/>
             <AverageUsdPrice/>
             <CurrencyTab/>
-            <Caeds/>
+            <Cards/>
+            <Footer/>
         </div>
     );
   }

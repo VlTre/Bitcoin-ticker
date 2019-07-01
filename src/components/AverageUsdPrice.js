@@ -44,7 +44,6 @@ class AverageUsdPrice extends Component {
       .then(parsedRes => {
         const costs = parsedRes.values.map(cost => Math.round(cost.y));
         const date = parsedRes.values.map(date => new Date(date.x * 1000));
-        console.log(costs, date);
           this.setState({
               options: {
                   categories: date,

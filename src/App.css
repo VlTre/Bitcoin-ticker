@@ -4,7 +4,7 @@
 .App {
   background-color: #30373e;
   color: #000000;
-
+  margin: 0;
 }
 
 .header{
@@ -37,18 +37,44 @@
 }
 
 .tabContainer{
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .info{
 }
 
 .chart{
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .cards{
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
+}
+
+.card{
+  width: 20%;
+  text-align: center;
+  background-color: #343a40;
+  color: #fff;
+  justify-content: baseline;
+}
+
+.cardDesc{
+  font-size: 16px;
+}
+
+.cardInfo{
+  font-size: 20px;
+}
+
+.footer{
+  margin-top: 50px;
+  background-color: #30373e;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  text-align: center;
 }
 
