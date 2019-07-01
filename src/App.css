@@ -31,13 +31,24 @@
 }
 
 .tab{
-  width: 40%;
-  align-self: center;
-  margin-left: 10%;
+  width: 100%;
+  display: inline-block;
+
 }
 
 .tabContainer{
   margin-top: 30px;
+}
+
+.info{
+}
+
+.chart{
+  margin-top: 30px;
+}
+
+.cards{
   display: flex;
+  justify-content: space-between;
 }
 

@@ -32,8 +32,8 @@ class CurrencyTab extends Component{
     render() {
         return(
 
-            <div className={'tabContainer'}>
-                <Table className={'tab'} responsive variant="dark">
+            <div className={'tabContainer container'}>
+                <Table striped bordered hover variant="dark">
                     <thead>
                     <tr>
                         <th scope="col"></th>
@@ -88,8 +88,6 @@ class CurrencyTab extends Component{
                     </tr>
                     </tbody>
                 </Table>
-
-
             </div>
         );
     }
